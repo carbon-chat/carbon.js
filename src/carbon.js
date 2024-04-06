@@ -1,5 +1,5 @@
 async function apiCall(apiUrl, action, body, auth) {
-    const url = apiUrl + action;
+    const url = apiUrl + '/api/' + action;
     const options = {
         method: 'POST',
         headers: {
@@ -40,5 +40,3 @@ class API {
         return apiCall(this.apiUrl, 'getChatMessages', { chatId }, auth);
     }
 }
-
-export default API;
