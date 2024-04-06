@@ -24,7 +24,7 @@ Carbon Clients connect to an instance of an [Carbon Server](https://github.com/c
 Include the Carbon.js library in your project by adding our script tag to your site:
 
 ```html
-<script src="https://carbon-chat.github.io/src/carbon.js"></script>
+<script src="https://carbon.proplayer919.dev/src/carbon.js"></script>
 ```
 
 or by specifying a specific version:
