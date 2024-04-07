@@ -39,4 +39,8 @@ class API {
     getMessages(auth, chatId) {
         return apiCall(this.apiUrl, 'getChatMessages', { chatId }, auth);
     }
+
+    getInvolvedChats(auth) {
+        return apiCall(this.apiUrl, 'getInvolvedChats', {}, auth);
+    }
 }
