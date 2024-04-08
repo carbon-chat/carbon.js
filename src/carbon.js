@@ -47,4 +47,12 @@ class API {
     getChatUsers(auth, chatId) {
         return apiCall(this.apiUrl, 'getChatUsers', { chatId }, auth);
     }
+
+    addUserIcon(auth, iconUrl) {
+        return apiCall(this.apiUrl, 'addUserIcon', { icon: iconUrl }, auth);
+    }
+
+    getUserIcon(auth, userId) {
+        return apiCall(this.apiUrl, 'getUserIcon', { userId }, auth);
+    }
 }
