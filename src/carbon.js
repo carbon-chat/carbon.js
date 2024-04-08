@@ -43,4 +43,8 @@ class API {
     getInvolvedChats(auth) {
         return apiCall(this.apiUrl, 'getInvolvedChats', {}, auth);
     }
+
+    getChatUsers(auth, chatId) {
+        return apiCall(this.apiUrl, 'getChatUsers', { chatId }, auth);
+    }
 }
